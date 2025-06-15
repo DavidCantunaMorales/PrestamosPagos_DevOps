@@ -9,7 +9,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-
+// Importante: Asegúrate de que las dependencias de Lombok y JPA estén correctamente configuradas en tu proyecto.
 @Entity
 @Table(name = "cuota")
 @Getter
