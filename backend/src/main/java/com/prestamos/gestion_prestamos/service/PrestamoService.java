@@ -98,6 +98,23 @@ public class PrestamoService {
         return savedPrestamo;
     }
 
+     public List<Prestamo> obtenerPrestamosPorEstado(String estadoPrestamo) {
+        String usuarioAutenticado = getUsuarioAutenticado();
+        List<Prestamo> prestamos = prestamoRepository.findByEstadoPrestamo(estadoPrestamo);
+        ActionLogger.logAction(usuarioAutenticado != null ? usuarioAutenticado : "Sistema",
+                "Consultó préstamos con estado: " + estadoPrestamo);
+        return prestamos;
+    }
+
+
+    public List<Prestamo> obtenerTodosLosPrestamos() {
+        String usuarioAutenticado = getUsuarioAutenticado();
+        List<Prestamo> prestamos = prestamoRepository.findAll();
+        ActionLogger.logAction(usuarioAutenticado != null ? usuarioAutenticado : "Sistema",
+                "Consultó todos los préstamos registrados");
+        return prestamos;
+    }
+
     public List<Prestamo> obtenerPrestamosPorCedula(String cedula) {
         String usuarioAutenticado = getUsuarioAutenticado();
         List<Prestamo> prestamos = prestamoRepository.findByUsuario_Cedula(cedula);
@@ -267,14 +284,7 @@ public class PrestamoService {
         return cuotas;
     }
 
-    public List<Prestamo> obtenerPrestamosPorEstado(String estadoPrestamo) {
-        String usuarioAutenticado = getUsuarioAutenticado();
-        List<Prestamo> prestamos = prestamoRepository.findByEstadoPrestamo(estadoPrestamo);
-        ActionLogger.logAction(usuarioAutenticado != null ? usuarioAutenticado : "Sistema",
-                "Consultó préstamos con estado: " + estadoPrestamo);
-        return prestamos;
-    }
-
+   
     public Prestamo desaprobarPrestamo(Long idPrestamo) {
         String usuarioAutenticado = getUsuarioAutenticado();
         Prestamo prestamo = prestamoRepository.findById(idPrestamo)
