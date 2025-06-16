@@ -1,7 +1,7 @@
 # Análisis de Colaboración
 
 ## Gráfico de Commits por Miembro
-Cada miembro del equipo (David, Luis, Mateo, Sebas) ha contribuido con al menos 5 commits en sus respectivas ramas (david_dev_quito, luis_devops_espana, mateo_tester_china, sebas_dev_cuenca). Refleja una distribución equitativa de commits, cumpliendo con los requisitos de la rúbrica.
+Cada miembro del equipo (David, Luis, Mateo, Sebas) ha contribuido con al menos 5 commits en sus respectivas ramas (david_dev_ecuador, luis_dev_espania, mateo_dev_corea, sebas_dev_costarica). Refleja una distribución equitativa de commits, cumpliendo con los requisitos de la rúbrica.
 
 ## Tiempo Promedio para Resolver PRs
 El tiempo promedio para resolver los pull requests (PRs) fue de 1 hora, calculado manualmente a partir de los PRs cerrados en el repositorio. Este valor representa el tiempo transcurrido desde la creación hasta el merge o cierre de cada PR.
