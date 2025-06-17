@@ -34,7 +34,9 @@ public class SecurityConfig {
                 .and()
                 .csrf(csrf -> csrf.disable()) // ❌ Deshabilitar CSRF solo si no usas formularios
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/usuarios/registro",
+                        .requestMatchers(
+                                "/actuator/prometheus", // 👈 Permitir Prometheus sin auth
+                                "/api/usuarios/registro",
                                 "/api/usuarios/login",
                                 "/api/usuarios/solicitar-recuperacion",
                                 "/api/usuarios/restablecer-contrasena",

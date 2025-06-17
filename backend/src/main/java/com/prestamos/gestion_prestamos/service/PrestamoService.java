@@ -151,13 +151,6 @@ public class PrestamoService {
         return prestamo;
     }
 
-    public List<Prestamo> obtenerTodosLosPrestamos() {
-        String usuarioAutenticado = getUsuarioAutenticado();
-        List<Prestamo> prestamos = prestamoRepository.findAll();
-        ActionLogger.logAction(usuarioAutenticado != null ? usuarioAutenticado : "Sistema",
-                "Consultó todos los préstamos registrados");
-        return prestamos;
-    }
 
     public Prestamo cambiarEstadoPrestamo(Long idPrestamo, String nuevoEstado) {
         String usuarioAutenticado = getUsuarioAutenticado();
