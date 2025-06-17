@@ -28,6 +28,6 @@ Si el equipo en China no tuviera acceso a Docker Hub, se presentarían los sigui
 ## Reflexión basada en nuestro trabajo como desarrolladores
 Este proyecto nos permitió experimentar con un flujo DevOps completo en un entorno distribuido, destacando las siguientes lecciones:
 
-- **Convenciones claras**: Las ramas nombradas por región (david_dev_quito, sebas_dev_cuenca, etc.) facilitaron el seguimiento del trabajo, pero requirieron una convención estricta para evitar conflictos.
+- **Convenciones claras**: Las ramas nombradas por región (david_dev_ecuador, luis_dev_espania, mateo_dev_corea, sebas_dev_costarica) facilitaron el seguimiento del trabajo, pero requirieron una convención estricta para evitar conflictos.
 - **Automatización eficiente**: La configuración de GitHub Actions para pruebas automáticas y builds de Docker redujo errores manuales, aunque demandó tiempo inicial para su correcta implementación.
 - **Colaboración intercultural**: Adaptarnos a diferentes zonas horarias y estilos de trabajo nos enseñó a ser más empáticos y precisos en la comunicación. Por ejemplo, los comentarios en los PRs debían ser detallados para evitar malentendidos entre regiones.
